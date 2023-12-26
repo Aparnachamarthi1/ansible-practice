@@ -1,0 +1,6 @@
+- name: Variables from inventory level
+  hosts: ansiblehost
+  tasks:
+  - name: printing the variables from inventory level
+    ansible.builtin.debug:
+      msg: "My name is {{USERNAME}}"

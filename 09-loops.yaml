@@ -1,0 +1,13 @@
+- name: Loops
+  hosts: localhost
+  tasks:
+  - name: printing the multiple names using loops
+    ansible.builtin.debug:
+      msg: "My devops team is {{item}}"
+
+    loop:
+    - aparna
+    - chamarthi
+    - sekar
+    - suhail
+    - rahul
